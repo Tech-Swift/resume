@@ -9,7 +9,7 @@ github: Tech-Swift
 linkedin: tech-swift
 phone: "+254 718 097 096"
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "990000"
+headcolor: "003366"
 aboutme: >
   I am a passionate web developer with a focus on full-stack development using
   the MERN stack (MongoDB, Express, React, Node.js). My journey began with
@@ -70,7 +70,7 @@ edu %>%
     with = inst,
     what = degree,
     why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = where
   )
 
@@ -87,8 +87,6 @@ skills %>%
   )
 
 ```
-
-\pagebreak
 # Projects
 
 ```{r PROJECTS}
@@ -102,7 +100,6 @@ projects %>%
     where = where
   )
 
-```
 ```
 
 # Certifications
